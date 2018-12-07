@@ -1,0 +1,379 @@
+/* seletores para uso geral */
+
+body {
+  line-height: 1.15 !important;
+}
+
+.orange {
+  color: #fec400;
+}
+
+.orange:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.white {
+  color: #f2f2f2;
+}
+
+.sub-white {
+  color: rgba(255, 255, 255, .75);
+}
+
+/* navbar css */
+
+.navbar {
+  background: #222222;
+  padding: .8rem 7rem !important;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar-dark .navbar-nav .nav-link .menu:focus, .navbar-dark .navbar-nav .nav-link.menu:hover {
+  color: #f2f2f2;
+}
+
+.carousel-item:before {
+  -webkit-box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 20rem rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.dropdown-toggle::before {
+  display: none !important;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.2s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #fec400;
+}
+
+.nav-link {
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background: #fec400;
+}
+
+/* carousel css */
+
+.carousel-item {
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1.carousel-caption-header {
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 6.5rem;
+  text-shadow: 1px 1px 11px rgba(0, 0, 0, 0.15);
+}
+
+p.carousel-caption-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  overflow: hidden;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*seção contatos*/
+
+#contact {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 90px;
+  width: 100%;
+  height: 520px;
+  background: #000000;
+  /* fallback navegadores antigos */
+  background: -webkit-linear-gradient(to bottom, #000000, #fec400);
+  /* chrome e safari antigos */
+  background: linear-gradient(to bottom, #000000, #fec400);
+  /* navegadores modernos */
+  color: #f2f2f2;
+}
+
+.content-header {
+  font-family: 'Black Ops One', cursive;
+  color: #fcc500;
+  font-size: 2rem;
+}
+
+.section-content {
+  text-align: center;
+}
+
+h1.section-header {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.contact-section {
+  padding-top: auto;
+}
+
+.contact-section .col-md {
+  width: 50%;
+}
+
+.form-line {
+  border-right: 1px solid #B29999;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+
+label {
+  line-height: 1em;
+  font-weight: normal;
+}
+
+.form-control {
+  font-size: .9em;
+  color: #080808;
+}
+
+textarea.form-control {
+  height: 203px !important;
+}
+
+.submit {
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+/* seção who */
+
+.who {
+  padding-bottom: 90px;
+}
+
+.who h4 {
+  color: #fec400;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.who .row {
+  margin-top: 10%;
+}
+
+.who-img {
+  text-align: center;
+}
+
+.who-img img {
+  width: 40%;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #222222;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+}
+
+.footer-padding {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-size: 13px;
+  color: #f2f2f2;
+  padding-bottom: 0px;
+  margin-bottom: 8px;
+}
+
+.footer-text {
+  margin: 0px;
+  list-style-type: none;
+  font-size: 14px;
+  padding: 0px 0px 10px 0px;
+}
+
+.footer-text li {
+  padding: 0px 0px 5px 0px;
+}
+
+.footer-text li a {
+  color: rgba(255, 255, 255, .75);
+}
+
+.footer-text li a:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.bottom_border {
+  border-bottom: 1px solid #212529;
+  padding-bottom: 20px;
+}
+
+.footer2 {
+  list-style-type: none;
+  padding: 0px;
+  display: table;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+}
+
+.footer2 li {
+  display: inline;
+}
+
+.footer2 li a {
+  color: rgba(255, 255, 255, .75);
+  margin: 0 12px;
+}
+
+.footer2 li a:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: table;
+  margin: 15px auto 0 auto;
+  list-style-type: none;
+  padding-inline-start: 0;
+  padding-inline-end: 22px;
+}
+
+.social-icons li {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.social-icons li a {
+  color: rgba(255, 255, 255, .75);
+  /*border:1px solid #f2f2f2;*/
+  padding: 8px;
+  /*border-radius:50%;*/
+}
+
+.social-icons li i {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.logoFooter img {
+  height: 40px;
+  widows: auto;
+}
+
+/* media queries */
+
+@media (min-width: 320px) {
+  .navbar .logo {
+    height: 30px;
+  }
+  .navbar .navbar-toggler {
+    font-size: 1rem;
+  }
+  h1.carousel-caption-header {
+    font-size: 1.6rem;
+  }
+  #contact {
+    padding: 40px 0;
+    height: auto;
+  }
+  .navbar {
+    padding: .4rem !important;
+  }
+  .who {
+    padding-bottom: 40px;
+  }
+  .logoFooter img {
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1.carousel-caption-header {
+    font-size: 3.5rem;
+  }
+  body {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1.carousel-caption-header {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1.carousel-caption-header {
+    font-size: 6.5rem;
+  }
+  .navbar {
+    padding: .8rem 7rem !important;
+  }
+}
